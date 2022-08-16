@@ -15,7 +15,6 @@ export const App = () => {
   const [error, setError] = useState('');
   const [largeImageURL, setLargeImageURL] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     if (query === '') {
@@ -46,7 +45,6 @@ export const App = () => {
     setPage(state => state + 1);
   };
   const toggleShowModal = () => {
-    setShowModal(state => !state);
     setLargeImageURL(null);
   };
 
